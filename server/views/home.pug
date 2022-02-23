@@ -1,0 +1,21 @@
+doctype
+html(lang="en")
+    head
+        include includes/header.pug
+        link(rel="stylesheet", href='/css/home.css')
+    body
+        include includes/navbar.pug
+        .jumbotron.text-center.bg-semidark.sectioned
+            h1.display-3 DiShare
+            p.lead The website to find all your needed Discord servers!
+            a.btn.btn-primary.btn-secondary(href='/categories', role='button') Categories
+        h3.color-light.sectionDiv Top Servers Today:
+        hr.bg-light.divide
+        .card.m2.bg-transparent(style='width: 13rem;')
+            img.card-img-top(src='https://www.pngitem.com/pimgs/m/108-1083975_twistedlimit-image-result-for-discord-icon-svg-hd.png', alt='...')
+            .card-body(style='color: #b7b7b7;')
+                h5.card-title Example Server
+                p.card-text Description of server.
+                a.btn.btn-primary(href='/join', style="margin-right: 0.3rem;") #[i.fa-solid.fa-arrow-right-to-bracket] Join
+                a.btn.btn-danger(href='/report') #[i.fa-solid.fa-gavel] Report
+
